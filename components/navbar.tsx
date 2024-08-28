@@ -20,9 +20,9 @@ const Navbar: React.FC = () => {
           {/* Logo Placeholder */}
           <div className="flex items-center justify-center">
             <img
-              src="https://placehold.co/100x70"
+              src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/compressed/arambh%20logo.webp"
               alt="logo"
-              className="bg-gray-200"
+              className=""
             />
           </div>
 

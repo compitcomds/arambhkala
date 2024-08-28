@@ -17,7 +17,7 @@ const AboutUs: FC = () => {
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-center px-8">
           <img
-            src="https://placehold.co/400x300"
+            src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/compressed/illu%201.webp"
             alt="Design Illustration"
             className="w-full h-auto -mt-8 md:-mt-16 lg:-mt-[99px]"
           />
