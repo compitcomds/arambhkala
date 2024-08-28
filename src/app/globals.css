@@ -2,6 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes cloud-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Container for the clouds */
+.cloud-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Prevents cloud container from blocking interactions */
+  overflow: hidden; /* Ensure clouds don’t overflow the container */
+}
+
+/* Cloud wrapper with animation */
+.cloud-wrapper {
+  position: absolute;
+  width: 200%; /* Twice the width of the container for seamless scrolling */
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the start */
+  animation: cloud-move 150s linear infinite; /* Adjust duration for desired speed */
+}
+
+/* Cloud styling */
+.cloud {
+  flex: 0 0 auto; /* Prevent cloud from shrinking or growing */
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  background-image: url('https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/1.png'); /* Replace with your cloud image */
+  background-size: cover; /* Ensure image covers the element */
+  background-repeat: no-repeat;
+}
+
+/* Specific positions for top clouds */
+.cloud.top-cloud {
+  position: absolute;
+}
+
+.cloud.top-cloud:nth-of-type(1) {
+  top: 10%;
+  left: 10%;
+}
+
+.cloud.top-cloud:nth-of-type(2) {
+  top: 20%;
+  left: 30%;
+}
+
+.cloud.top-cloud:nth-of-type(3) {
+  top: 40%;
+  left: 50%;
+}
+
+.cloud.top-cloud:nth-of-type(4) {
+  top: 60%;
+  left: 70%;
+}
+
+.cloud.top-cloud:nth-of-type(5) {
+  top: 80%;
+  left: 90%;
+}
+
+/* Specific positions for bottom clouds */
+.cloud.bottom-cloud {
+  position: absolute;
+}
+
+.cloud.bottom-cloud:nth-of-type(1) {
+  bottom: 10%;
+  left: 20%;
+}
+
+.cloud.bottom-cloud:nth-of-type(2) {
+  bottom: 25%;
+  left: 40%;
+}
+
+.cloud.bottom-cloud:nth-of-type(3) {
+  bottom: 40%;
+  left: 60%;
+}
+
+.cloud.bottom-cloud:nth-of-type(4) {
+  bottom: 55%;
+  left: 80%;
+}
+
+.cloud.bottom-cloud:nth-of-type(5) {
+  bottom: 70%;
+  left: 100%;
+}
+
+.animate-pulse {
+  animation: pulse infinite;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
