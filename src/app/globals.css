@@ -110,6 +110,39 @@
 }
 
 
+
+
+
+
+/* Global CSS for animations */
+@keyframes cloudMove {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-moveClouds {
+  animation: cloudMove 80s linear infinite;
+}
+
+.animate-twinkle {
+  animation: twinkle 2s infinite;
+}
+
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

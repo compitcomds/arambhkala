@@ -3,10 +3,10 @@ import React, { FC } from "react";
 const AboutUs: FC = () => {
   return (
     <>
-      <section className="bg-black text-white flex flex-col md:flex-row items-center px-8 relative">
-        <div className="w-full md:w-1/2 p-8">
-          <h2 className="text-[#7036db] text-2xl lg:text-4xl font-bold mb-4">About Us</h2>
-          <p className="text-lg lg:text-xl font-semibold tracking-[0.1em] leading-4">
+      <section className="bg-black text-white flex flex-col md:flex-row items-center px-4 space-y-10 relative">
+        <div className="w-full md:w-3/6 flex flex-col justify-center lg:pl-10">
+          <h2 className="text-[#7036db] text-3xl lg:text-6xl font-bold mb-4">About Us</h2>
+          <p className="text-lg lg:text-2xl font-bold ">
             At Arambhakala Foundation, we believe in igniting creativity,
             nurturing talent, and sculpting futures. We are a passionate team
             dedicated to revolutionizing the landscape of skill development in
@@ -15,11 +15,11 @@ const AboutUs: FC = () => {
             thrive in the dynamic world of design.
           </p>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center items-center px-8">
+        <div className="w-full md:w-4/6 flex justify-end items-center ">
           <img
-            src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/compressed/illu%201.webp"
+            src="https://ccdstest.b-cdn.net/Arambhakala/illust1.webp"
             alt="Design Illustration"
-            className="w-full h-auto -mt-8 md:-mt-16 lg:-mt-[99px]"
+            className="w-5/6 -mt-8 md:-mt-16 lg:-mt-[99px]"
           />
         </div>
       </section>

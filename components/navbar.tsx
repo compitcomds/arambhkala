@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="bg-[#ea8a2a] p-4">
+      <nav className="bg-[#ea8a2a] p-4 font-serif">
         <div className=" flex items-center justify-between">
           {/* Logo Placeholder */}
           <div className="flex items-center justify-center">
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
           <div className="block lg:hidden">
             <button
               onClick={toggleMenu}
-              className="text-[#7036db] focus:outline-none"
+              className="text-[#7a38f3] focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -50,40 +50,40 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Menu Links */}
-          <div className="hidden lg:flex space-x-8 text-xl">
+          <div className="hidden lg:flex space-x-8  text-xl ">
             <a
               href="#"
-              className="text-purple-600 font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
+              className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
             >
               Home
             </a>
             <a
               href="#"
-              className="text-purple-600 font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
+              className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
             >
               Short Term Courses
             </a>
             <a
               href="#"
-              className="text-purple-600 font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
+              className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
             >
               Art Promotion
             </a>
             <a
               href="#"
-              className="text-purple-600 font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
+              className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
             >
               Co-Working Space
             </a>
             <a
               href="#"
-              className="text-purple-600 font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
+              className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
             >
               Workshops
             </a>
             <a
               href="#"
-              className="text-purple-600 font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
+              className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
             >
               Events
             </a>
@@ -107,42 +107,42 @@ const Navbar: React.FC = () => {
               <a
                 href="#"
                 onClick={closeMenu}
-                className="text-purple-600 font-bold bg-[#efd93c] py-3 px-4 rounded-md"
+                className="text-[#7a38f3] font-bold bg-[#efd93c] py-3 px-4 rounded-md"
               >
                 Home
               </a>
               <a
                 href="#"
                 onClick={closeMenu}
-                className="text-purple-600 font-bold bg-[#efd93c] py-3 px-4 rounded-md"
+                className="text-[#7a38f3] font-bold bg-[#efd93c] py-3 px-4 rounded-md"
               >
                 Short Term Courses
               </a>
               <a
                 href="#"
                 onClick={closeMenu}
-                className="text-purple-600 font-bold bg-[#efd93c] py-3 px-4 rounded-md"
+                className="text-[#7a38f3] font-bold bg-[#efd93c] py-3 px-4 rounded-md"
               >
                 Art Promotion
               </a>
               <a
                 href="#"
                 onClick={closeMenu}
-                className="text-purple-600 font-bold bg-[#efd93c] py-3 px-4 rounded-md"
+                className="text-[#7a38f3] font-bold bg-[#efd93c] py-3 px-4 rounded-md"
               >
                 Co-Working Space
               </a>
               <a
                 href="#"
                 onClick={closeMenu}
-                className="text-purple-600 font-bold bg-[#efd93c] py-3 px-4 rounded-md"
+                className="text-[#7a38f3] font-bold bg-[#efd93c] py-3 px-4 rounded-md"
               >
                 Workshops
               </a>
               <a
                 href="#"
                 onClick={closeMenu}
-                className="text-purple-600 font-bold bg-[#efd93c] py-3 px-4 rounded-md"
+                className="text-[#7a38f3] font-bold bg-[#efd93c] py-3 px-4 rounded-md"
               >
                 Events
               </a>

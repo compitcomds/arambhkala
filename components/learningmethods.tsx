@@ -1,68 +1,167 @@
-import React from 'react';
+import React from "react";
 
-const LearningMethods: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <>
-    <div className="relative w-full h-screen bg-black text-white flex items-center justify-center p-10">
-      {/* Circular Diagram */}
-      <div className="absolute left-10 top-10">
-        <div className="relative w-64 h-64 bg-transparent rounded-full flex items-center justify-center">
-          <div className="absolute w-[100%] h-[100%] border-8 border-gray-300 rounded-full"></div>
-          <div className="absolute w-[50%] h-[50%] border-8 border-orange-500 rounded-full"></div>
-          <div className="absolute w-[70%] h-[70%] border-8 border-blue-500 rounded-full flex items-center justify-center">
-            <div className="w-[50%] h-[50%] border-8 border-pink-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">कृति</span>
+      <div className="flex flex-col justify-center items-center px-44 my-6 space-y-2">
+        <h3 className="text-3xl lg:text-5xl text-white uppercase">Learning Methods</h3>
+        <div className="w-1/2 bg-yellow-400 h-1 rounded-full"></div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 lg:hidden my-4 align-middle">
+        <div className="flex flex-col space-y-5 border p-4">
+          <div className="flex items-center justify-center bg-[#f88e2d] h-44 rounded-2xl text-4xl text-black font-bold">
+          चित्त         </div>
+          <h3 className="text-3xl">Step 1</h3>
+          <p className="text-">A thought is a fleeting whisper of the mind, shaping the
+          contours of our reality.</p>
+
+        
+        </div>
+        <div className="flex flex-col space-y-5 border p-4">
+          <div className="flex items-center justify-center bg-[#f51b68] h-44 rounded-2xl text-4xl text-black font-bold">
+          कला कृति
+          </div>
+          <h3 className="text-3xl">Step 2</h3>
+          <p className="text-">Artwork design infused with creativity captures the essence of
+                imagination, transforming blank spaces into vibrant expressions
+                that stir the senses and inspire awe.</p>
+        
+        </div>
+        <div className="flex flex-col space-y-5 border p-4">
+          <div className="flex items-center justify-center bg-[#30d3ec] h-44 rounded-2xl text-4xl text-black font-bold">
+          चलचित्र
+          </div>
+          <h3 className="text-3xl">Step 3</h3>
+          <p className="text-">Motion art seamlessly blends visual elements with movement,
+                creating an immersive experience that dances across the screen,
+                captivating audiences with its dynamic allure.</p>
+        
+        </div>
+      </div>
+      <div className="bg-black text-white min-h-screen  w-full relative overflow-hidden hidden lg:block">
+        {/* Circular Diagram and Text Steps */}
+        <div className="flex flex-col lg:flex-row w-full items-center md:w-1/2  z-10">
+          {/* Left Side: Circular Diagram */}
+          <div className="w-[1300px] h-full">
+            <img
+              src="https://ccdstest.b-cdn.net/Arambhakala/chakra.webp"
+              alt=""
+              className=" object-contain w-full h-full"
+            />
+          </div>
+
+          {/* Right Side: Text Steps */}
+          <div className="space-y-16 mt-8 lg:mt-0 text-lg -ml-20">
+            <div className="space-y-2">
+              <h3 className="text-yellow-300 text-4xl">Step 1</h3>
+              <p className="text-2xl">
+                A thought is a fleeting whisper of the mind, shaping the
+                contours of our reality.
+              </p>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-pink-500 text-4xl">Step 2</h3>
+              <p className="text-2xl">
+                Artwork design infused with creativity captures the essence of
+                imagination, transforming blank spaces into vibrant expressions
+                that stir the senses and inspire awe.
+              </p>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-blue-400 text-4xl">Step 3</h3>
+              <p className="text-2xl">
+                Motion art seamlessly blends visual elements with movement,
+                creating an immersive experience that dances across the screen,
+                captivating audiences with its dynamic allure.
+              </p>
             </div>
           </div>
-          <div className="absolute top-4 left-2/3 text-orange-500 font-bold">चित</div>
-          <div className="absolute bottom-4 right-2/3 text-blue-500 font-bold">चलचित्र</div>
-          <div className="absolute top-2/3 left-2 text-pink-500 font-bold">कला</div>
+        </div>
+
+        {/* Right Side: Character and Background Elements */}
+        <div className="absolute inset-y-0 right-0 flex items-center z-0 w-full">
+          <div className="relative w-full h-full">
+            {/* Character Image */}
+            <img
+              src="https://ccdstest.b-cdn.net/Arambhakala/illu2%20(1).webp" // Replace with your character image URL
+              alt="Character"
+              className="absolute bottom-0 right-32 w-1/3 z-50"
+            />
+
+            {/* Stars and Clouds */}
+
+            <div className="absolute top-5 right-[600px] w-12 h-12 z-50 animate-twinkle">
+              <img
+                src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
+                alt="Star"
+                className="animate-pulse"
+              />
+            </div>
+            <div className="absolute top-20 right-10 w-12 h-12 z-50 animate-twinkle">
+              <img
+                src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
+                alt="Star"
+                className="animate-pulse"
+              />
+            </div>
+            <div className="absolute top-40 right-[700px] w-24 h-24 animate-twinkle">
+              <img
+                src="https://ccdstest.b-cdn.net/Arambhakala/cr2.webp"
+                alt="Star"
+              />
+            </div>
+            <div className="absolute top-10 right-96 w-12 h-12 z-50 animate-twinkle">
+              <img
+                src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
+                alt="Star"
+              />
+            </div>
+            <div className="absolute top-44 right-24 w-12 h-12 z-50 animate-twinkle">
+              <img
+                src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
+                alt="Star"
+              />
+            </div>
+            <div className="absolute bottom-36 right-[700px] w-12 h-12 z-50 animate-twinkle">
+              <img
+                src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
+                alt="Star"
+              />
+            </div>
+            <div className="absolute bottom-80 right-[600px] w-24 h-24 animate-twinkle">
+              <img
+                src="https://ccdstest.b-cdn.net/Arambhakala/cr1.webp"
+                alt="Star"
+                className="animate-pulse"
+              />
+            </div>
+          </div>
+          {/* clouds */}
+          <div className="absolute bottom-20 right-16 w-1/2 opacity-80 animate-moveClouds z-0">
+            <img
+              src="https://ccdstest.b-cdn.net/Arambhakala/c1.webp"
+              alt="Cloud"
+              className="w-56 z-0"
+            />
+          </div>
+          <div className="absolute top-20 right-56 w-1/2 opacity-80 animate-moveClouds z-0">
+            <img
+              src="https://ccdstest.b-cdn.net/Arambhakala/c1.webp"
+              alt="Cloud"
+              className="w-56 z-0"
+            />
+          </div>
+          <div className="absolute bottom-80 right-32 w-1/2 opacity-80 animate-moveClouds z-0">
+            <img
+              src="https://ccdstest.b-cdn.net/Arambhakala/c1.webp"
+              alt="Cloud"
+              className="w-56 z-0"
+            />
+          </div>
         </div>
       </div>
-
-      {/* Steps Section */}
-      <div className="ml-[350px] mt-10">
-        <h2 className="text-xl font-bold text-yellow-500">LEARNING METHODS</h2>
-        <div className="mt-8">
-          <div className="flex items-start mb-6">
-            <span className="text-yellow-500 text-lg font-bold">Step 1</span>
-            <p className="ml-4">
-              A thought is a fleeting whisper of the mind, shaping the contours of our reality.
-            </p>
-          </div>
-          <div className="flex items-start mb-6">
-            <span className="text-pink-500 text-lg font-bold">Step 2</span>
-            <p className="ml-4">
-              Artwork design infused with creativity captures the essence of imagination, transforming blank spaces into vibrant expressions that stir the senses and inspire awe.
-            </p>
-          </div>
-          <div className="flex items-start">
-            <span className="text-blue-500 text-lg font-bold">Step 3</span>
-            <p className="ml-4">
-              Motion art seamlessly blends visual elements with movement, creating an immersive experience that dances across the screen, captivating audiences with its dynamic allure.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Character Illustration */}
-      <div className="absolute bottom-0 right-10">
-        <img src="/path-to-character.png" alt="Character" className="w-72" />
-      </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute top-4 right-16">
-        <img src="/path-to-eye.png" alt="Eye" className="w-16" />
-      </div>
-      <div className="absolute top-20 right-32">
-        <img src="/path-to-brush.png" alt="Brush" className="w-8" />
-      </div>
-      <div className="absolute bottom-10 left-16">
-        <img src="/path-to-star.png" alt="Star" className="w-12" />
-      </div>
-    </div>
     </>
   );
 };
 
-export default LearningMethods;
+export default Home;

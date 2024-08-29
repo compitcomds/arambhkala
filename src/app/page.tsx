@@ -15,7 +15,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <AboutUs />
-        {/* <LearningMethods /> */}
+        <LearningMethods />
         <Courses />
         <Feeds />
         <Footer />

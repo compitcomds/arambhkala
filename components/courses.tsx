@@ -3,7 +3,7 @@ import React from 'react';
 const Courses: React.FC = () => {
   return (
     <>
-    {/* <div className="h-20 w-full bg-[#2dc865]"></div> */}
+    <div className="h-20 w-full bg-[#2dc865]"></div>
     <div className="flex items-center justify-center bg-black min-h-screen p-4">
       <div className="relative w-full max-w-8xl lg:mx-10 grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Workshop Box */}

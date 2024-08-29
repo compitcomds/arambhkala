@@ -51,6 +51,14 @@ const feeds = [
     videoId: "OwR74xSMX_Y",
     instagramUrl: "https://www.instagram.com/example2",
   },
+  {
+    id: 7,
+    imageUrl: "/path-to-image6.jpg",
+    video: true,
+    videoUrl: "https://www.youtube.com/embed/OwR74xSMX_Y",
+    videoId: "OwR74xSMX_Y",
+    instagramUrl: "https://www.instagram.com/example2",
+  },
 ];
 
 const Feeds: React.FC = () => {
@@ -76,7 +84,7 @@ const Feeds: React.FC = () => {
         <h2 className="text-center text-2xl font-bold mb-4 bg-white text-black py-4">
           LIVE FEEDS
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6  px-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  px-4">
           {feeds.map((feed) => (
             <div
               key={feed.id}

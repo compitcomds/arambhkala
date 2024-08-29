@@ -36,7 +36,7 @@ const Hero: FC = () => {
           </div>
           <div
             className="absolute w-10 h-10 rounded-full animate-pulse"
-            style={{ top: "40%", left: "70%", animationDuration: "3.5s" }}
+            style={{ top: "50%", left: "70%", animationDuration: "3.5s" }}
           >
             <img
               src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/star1.png"
@@ -45,7 +45,7 @@ const Hero: FC = () => {
           </div>
           <div
             className="absolute w-10 h-10 rounded-full animate-pulse"
-            style={{ top: "50%", left: "80%", animationDuration: "4s" }}
+            style={{ top: "10%", left: "80%", animationDuration: "4s" }}
           >
             <img
               src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/star1.png"
@@ -91,7 +91,7 @@ const Hero: FC = () => {
             {[...Array(10)].map((_, i) => (
               <div className="cloud top-cloud" key={i}>
                 <img
-                  src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/1.png"
+                  src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/2.png"
                   alt="Cloud"
                   className="w-32 h-16"
                 />
@@ -111,8 +111,8 @@ const Hero: FC = () => {
               />
             </div>
 
-            <h1 className="text-white text-2xl mt-4">ARAMBHKALA FOUNDATION</h1>
-            <p className="text-white">House Of Arts & Technology</p>
+            <h1 className="text-white text-2xl mt-4 font-bold">ARAMBHKALA FOUNDATION</h1>
+            <p className="text-white text-lg">House Of Arts & Technology</p>
           </div>
         </div>
 
@@ -122,9 +122,9 @@ const Hero: FC = () => {
             {[...Array(10)].map((_, i) => (
               <div className="cloud bottom-cloud" key={i}>
                 <img
-                  src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/1.png"
+                  src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/3.png"
                   alt="Cloud"
-                  className="w-32 h-16"
+                  className="w-32 h-16 "
                 />
               </div>
             ))}
