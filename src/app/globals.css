@@ -134,7 +134,7 @@
 }
 
 .animate-moveClouds {
-  animation: cloudMove 80s linear infinite;
+  animation: cloudMove 20s linear infinite ;
 }
 
 .animate-twinkle {

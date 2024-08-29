@@ -20,9 +20,9 @@ const Navbar: React.FC = () => {
           {/* Logo Placeholder */}
           <div className="flex items-center justify-center">
             <img
-              src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/compressed/arambh%20logo.webp"
+              src="https://ccdstest.b-cdn.net/Arambhakala/Untitled%20design.png"
               alt="logo"
-              className=""
+              className="w-1/2"
             />
           </div>
 
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Menu Links */}
-          <div className="hidden lg:flex space-x-8  text-xl ">
+          <div className="hidden lg:flex space-x-4  text-xl ">
             <a
               href="#"
               className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
