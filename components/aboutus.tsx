@@ -15,15 +15,15 @@ const AboutUs: FC = () => {
             thrive in the dynamic world of design.
           </p>
         </div>
-        <div className="w-full md:w-4/6 flex justify-end items-center ">
+        <div className="w-full md:w-4/6 flex lg:justify-end justify-center items-center ">
           <img
             src="https://ccdstest.b-cdn.net/Arambhakala/illust1.webp"
             alt="Design Illustration"
-            className="w-5/6 -mt-8 md:-mt-16 lg:-mt-[99px]"
+            className="lg:w-5/6 -mt-8 md:-mt-16 lg:-mt-[99px]"
           />
         </div>
       </section>
-      <div className="h-20 w-full bg-[#7036db]"></div>
+      <div className="lg:h-20 h-10 w-full bg-[#7036db]"></div>
     </>
   );
 };

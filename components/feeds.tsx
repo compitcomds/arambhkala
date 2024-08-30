@@ -59,6 +59,22 @@ const feeds = [
     videoId: "OwR74xSMX_Y",
     instagramUrl: "https://www.instagram.com/reel/C19icfohuSo/?igsh=MXRwNXZ6eXFvZ2hsag==",
   },
+  {
+    id: 8,
+    imageUrl: "/path-to-image6.jpg",
+    video: true,
+    videoUrl: "https://youtube.com/shorts/GyBpRLRzbmY?si=DUxg6PCf5cNygjFr",
+    videoId: "OwR74xSMX_Y",
+    instagramUrl: "https://www.instagram.com/reel/C19icfohuSo/?igsh=MXRwNXZ6eXFvZ2hsag==",
+  },
+  {
+    id: 9,
+    imageUrl: "/path-to-image6.jpg",
+    video: true,
+    videoUrl: "https://youtube.com/shorts/GyBpRLRzbmY?si=DUxg6PCf5cNygjFr",
+    videoId: "OwR74xSMX_Y",
+    instagramUrl: "https://www.instagram.com/reel/C19icfohuSo/?igsh=MXRwNXZ6eXFvZ2hsag==",
+  },
 ];
 
 const Feeds: React.FC = () => {
@@ -80,15 +96,15 @@ const Feeds: React.FC = () => {
 
   return (
     <>
-      <div className="py-8 bg-white">
+      <div className="py-4 bg-white">
         <h2 className="text-center text-2xl font-bold mb-4 bg-white text-black py-4">
           LIVE FEEDS
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7  px-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-9 px-4 lg:px-0">
           {feeds.map((feed) => (
             <div
               key={feed.id}
-              className="relative w-full h-64 md:h-80 bg-gray-200  overflow-hidden shadow-lg"
+              className="relative w-full h-64 md:h-72 bg-gray-200  overflow-hidden shadow-lg"
             >
               {feed.video ? (
                 <>

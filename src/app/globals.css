@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Align items to the start */
-  animation: cloud-move 150s linear infinite; /* Adjust duration for desired speed */
+  animation: cloud-move 160s linear infinite; /* Adjust duration for desired speed */
 }
 
 /* Cloud styling */
@@ -134,11 +134,11 @@
 }
 
 .animate-moveClouds {
-  animation: cloudMove 20s linear infinite ;
+  animation: cloudMove 80s linear infinite ;
 }
 
 .animate-twinkle {
-  animation: twinkle 2s infinite;
+  animation: twinkle 5s infinite;
 }
 
 

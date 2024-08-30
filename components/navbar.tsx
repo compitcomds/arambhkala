@@ -18,19 +18,19 @@ const Navbar: React.FC = () => {
       <nav className="bg-[#ea8a2a] p-4 font-serif">
         <div className=" flex items-center justify-between">
           {/* Logo Placeholder */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center lg:w-1/12">
             <img
               src="https://ccdstest.b-cdn.net/Arambhakala/Untitled%20design.png"
               alt="logo"
-              className="w-1/2"
+              className="w-1/2 lg:w-full"
             />
           </div>
 
           {/* Hamburger Icon for Mobile */}
-          <div className="block lg:hidden">
+          <div className="block lg:hidden ">
             <button
               onClick={toggleMenu}
-              className="text-[#7a38f3] focus:outline-none"
+              className="text-black focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Menu Links */}
-          <div className="hidden lg:flex space-x-4  text-xl ">
+          <div className="hidden lg:flex space-x-4 items-center justify-center text-xl w-10/12">
             <a
               href="#"
               className="text-[#7a38f3] font-bold hover:bg-[#efd93c] py-3 px-4 rounded-md"
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Contact Us Button */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:block w-1/12 text-end">
             <a
               href="#"
               className="bg-blue-500 text-white font-bold px-4 py-3 rounded hover:bg-blue-600"

@@ -3,11 +3,11 @@ import React from "react";
 const Home: React.FC = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center px-44 my-6 space-y-2">
+      <div className="flex flex-col justify-center items-center px-4 lg:px-44 my-6 space-y-2">
         <h3 className="text-3xl lg:text-5xl text-white uppercase">
           Learning Methods
         </h3>
-        <div className="w-1/2 bg-yellow-400 h-1 rounded-full"></div>
+        <div className="lg:w-1/2 w-full bg-yellow-400 h-1 rounded-full"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 lg:hidden my-4 align-middle">
         <div className="flex flex-col space-y-5 border p-4">
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
           </p>
         </div>
         <div className="flex flex-col space-y-5 border p-4">
-          <div className="flex items-center justify-center bg-[#f51b68] h-44 rounded-2xl text-4xl text-black font-bold">
+          <div className="flex items-center justify-center bg-[#f51b68] h-44 rounded-2xl text-4xl text-white font-bold">
             कला कृति
           </div>
           <h3 className="text-3xl">Step 2</h3>
@@ -110,14 +110,14 @@ const Home: React.FC = () => {
               </video>
             </div>
 
-            <div className="absolute top-5 right-[600px] w-12 h-12 z-50 animate-twinkle">
+            <div className="absolute top-5 right-[600px] w-16 h-16 z-50 animate-twinkle">
               <img
                 src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
                 alt="Star"
                 className="animate-pulse"
               />
             </div>
-            <div className="absolute top-20 right-10 w-12 h-12 z-50 animate-twinkle">
+            <div className="absolute top-20 right-10 w-14 h-14 z-50 animate-twinkle">
               <img
                 src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
                 alt="Star"
@@ -139,7 +139,7 @@ const Home: React.FC = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-            <div className="absolute top-10 right-96 w-12 h-12 z-50 animate-twinkle">
+            <div className="absolute top-10 right-96 w-16 h-16 z-50 animate-twinkle">
               <img
                 src="https://ccdstest.b-cdn.net/Arambhakala/st1%20(1).webp"
                 alt="Star"

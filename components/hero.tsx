@@ -17,16 +17,16 @@ const Hero: FC = () => {
             />
           </div>
           <div
-            className="absolute w-10 h-10 rounded-full animate-pulse"
+            className="absolute w-8 h-8 rounded-full animate-pulse"
             style={{ top: "20%", left: "25%", animationDuration: "2.5s" }}
           >
             <img
-              src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/star1.png"
+              src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/star3.png"
               alt=""
             />
           </div>
           <div
-            className="absolute w-10 h-10 rounded-full animate-pulse"
+            className="absolute w-8 h-8 rounded-full animate-pulse"
             style={{ top: "30%", left: "60%", animationDuration: "3s" }}
           >
             <img
@@ -35,11 +35,11 @@ const Hero: FC = () => {
             />
           </div>
           <div
-            className="absolute w-10 h-10 rounded-full animate-pulse"
+            className="absolute w-6 h-6 rounded-full animate-pulse"
             style={{ top: "50%", left: "70%", animationDuration: "3.5s" }}
           >
             <img
-              src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/star1.png"
+              src="https://ccdstest.b-cdn.net/Arambhakala/stars%20and%20clouds/star2.png"
               alt=""
             />
           </div>
